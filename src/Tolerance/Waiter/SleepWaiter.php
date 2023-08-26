@@ -18,6 +18,6 @@ class SleepWaiter implements Waiter
      */
     public function wait($seconds = 1)
     {
-        usleep($seconds * 1000000);
+        usleep((int) $seconds * 1000000);
     }
 }
